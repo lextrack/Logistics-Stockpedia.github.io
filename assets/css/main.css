@@ -1,0 +1,52 @@
+body{
+    background-color: #1d2630;
+}
+
+*{
+    color: #fff;
+}
+
+#Update{
+    display: none;
+}
+
+.titles{
+    text-align: center;
+    color: white;
+}
+
+#searchInput{
+    display: flex;
+    font-size: 17px;
+    text-align: left;
+    color: black;
+}
+
+#total{
+    display: none;
+}
+
+.limit{
+    border-style: dashed;
+    color: white;
+}
+
+.nav-link{
+    color: crimson;
+}
+
+.card{
+    color: black;
+}
+
+.card-body{
+    color: black;
+}
+
+.card-text{
+    color: black;
+}
+
+.nav-item{
+    font-size: 11px;
+}
