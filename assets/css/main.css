@@ -1,9 +1,10 @@
 body{
-    background-color: #1d2630;
+    background-color: #1d2630f5;
 }
 
 *{
     color: #fff;
+    font-size: 13px;
 }
 
 #Update{
@@ -17,7 +18,6 @@ body{
 
 #searchInput{
     display: flex;
-    font-size: 17px;
     text-align: left;
     color: black;
 }
@@ -48,5 +48,5 @@ body{
 }
 
 .nav-item{
-    font-size: 11px;
+    font-size: 12px;
 }
