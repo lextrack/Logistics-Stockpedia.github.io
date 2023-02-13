@@ -2,8 +2,7 @@ var itemsPerPage = 5;
 var currentPage = 1;
 var totalPages = 5;
 
-function validateForm()
-{
+function validateForm(){
     var product = document.getElementById("product").value;
     var incomings = document.getElementById("incomings").value;
     var outgoings = document.getElementById("outgoings").value;
@@ -20,7 +19,7 @@ function validateForm()
 return true;
 }
 
-function showData() {
+function showData(){
     var productList;
     if(localStorage.getItem("productList") == null) {
         productList = [];
@@ -34,7 +33,7 @@ function showData() {
     var displayedProducts = productList.slice(startIndex, endIndex);
 
     var html = "";
-    displayedProducts.forEach(function (element, crud) {
+    displayedProducts.forEach(function (element, crud){
         html += "<tr>";
         html += "<td>" + element.product + "</td>";
         html += "<td>" + element.incomings + "</td>";
@@ -67,11 +66,11 @@ function showData() {
             startPage = totalPages - 4;
         }
         for (let i = startPage; i <= endPage; i++) {
-            paginationHtml += '<button class="btn btn-outline-danger" onclick="changePage(' + i + ')" ' + (currentPage === i ? 'style="background-color: #6d2635"' : '') + '>' + i + '</button>';
+            paginationHtml += '<button class="btn btn-outline-danger" onclick="changePage(' + i + ')" ' + (currentPage === i ? 'style="background-color: #7a2640"' : '') + '>' + i + '</button>';
         }
     } else {
         for (let i = 1; i <= totalPages; i++) {
-            paginationHtml += '<button class="btn btn-outline-danger" onclick="changePage(' + i + ')" ' + (currentPage === i ? 'style="background-color: #6d2635"' : '') + '>' + i + '</button>';
+            paginationHtml += '<button class="btn btn-outline-danger" onclick="changePage(' + i + ')" ' + (currentPage === i ? 'style="background-color: #7a2640"' : '') + '>' + i + '</button>';
         }
     }
     paginationHtml += '<button class="btn btn-outline-danger" onclick="changePage(' + totalPages + ')">Latest</button>';
@@ -93,10 +92,8 @@ function changePage(newPage) {
     showData();
 }
 
-function AddData()
-{
-    if(validateForm() == true)
-    {
+function AddData(){
+    if(validateForm() == true){
         var product = document.getElementById("product").value;
         var incomings = document.getElementById("incomings").value;
         var outgoings = document.getElementById("outgoings").value;
@@ -106,12 +103,10 @@ function AddData()
         var total = parseInt(incomings) - parseInt(outgoings);
 
         var productList;
-        if(localStorage.getItem("productList") == null)
-        {
+        if(localStorage.getItem("productList") == null){
             productList = [];
         }
-        else
-        {
+        else{
             productList = JSON.parse(localStorage.getItem("productList"));
         }
     
@@ -137,15 +132,12 @@ function AddData()
     }
 }
 
-function deleteData(crud)
-{
+function deleteData(crud){
     var productList;
-    if(localStorage.getItem("productList") == null)
-    {
+    if(localStorage.getItem("productList") == null){
         productList = [];
     }
-    else
-    {
+    else{
         productList = JSON.parse(localStorage.getItem("productList"));
     }
 
@@ -154,8 +146,7 @@ function deleteData(crud)
     showData();
 }
 
-function updateData(crud)
-{
+function updateData(crud){
     document.getElementById("Submit").style.display = "none";
     document.getElementById("Update").style.display = "block";
 
@@ -163,12 +154,10 @@ function updateData(crud)
     document.getElementById("outgoings").addEventListener("input", updateTotal);
 
     var productList;
-    if(localStorage.getItem("productList") == null)
-    {
+    if(localStorage.getItem("productList") == null){
         productList = [];
     }
-    else
-    {
+    else{
         productList = JSON.parse(localStorage.getItem("productList"));
     }
     
@@ -181,10 +170,9 @@ function updateData(crud)
     document.getElementById("date").value = productList[crud].date;
 
 
-    document.querySelector("#Update").onclick = function()
-    {
-        if(validateForm() == true)
-        {
+    document.querySelector("#Update").onclick = function(){
+
+        if(validateForm() == true){
             productList[crud].product = document.getElementById("product").value;
             productList[crud].incomings = document.getElementById("incomings").value;
             productList[crud].outgoings = document.getElementById("outgoings").value;
@@ -214,13 +202,13 @@ function updateData(crud)
     }
 }
 
-function updateTotal() {
+function updateTotal(){
     var incomings = document.getElementById("incomings").value;
     var outgoings = document.getElementById("outgoings").value;
     document.getElementById("total").value = parseInt(incomings) - parseInt(outgoings);
 }
 
-function searchData() {
+function searchData(){
     var searchInput = document.getElementById("searchInput").value;
     var productList = JSON.parse(localStorage.getItem("productList"));
     var searchedProducts = productList.filter(function(product) {
@@ -234,7 +222,7 @@ function searchData() {
       );
     });
     var html = "";
-    searchedProducts.forEach(function(element, crud) {
+    searchedProducts.forEach(function(element, crud){
       html += "<tr>";
       html += "<td>" + element.product + "</td>";
       html += "<td>" + element.incomings + "</td>";
