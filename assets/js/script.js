@@ -11,8 +11,7 @@ function validateForm(){
     var date = document.getElementById("date").value;
     var total = document.getElementById("total").value;
 
-    if(product == "")
-{
+    if(product == ""){
     alert("Indicate at least the name of the product");
     return false;
 }

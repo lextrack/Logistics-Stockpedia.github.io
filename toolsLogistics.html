@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Basic CRUD with JavaScript and information about logistics field">
+    <meta name="author" content="Lextrack">
+    <title>Logistics techniques and systems</title>
+    <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    rel="stylesheet" 
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <link rel="icon" href="assets/imgs/icono.ico" />
+</head>
+<body>
+    <ul class="nav nav-tabs justify-content-center bg-dark">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="crud.html">CRUD</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="logisticsBasics.html">Logistics Basics</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="toolsLogistics.html">Logistics techniques and systems</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="glossary.html">Glossary</a>
+        </li>
+      </ul>
+
+      <div class="container">
+        <div class="h2 pb-2 mb-4 text-info text-center border-bottom border-info mt-3 md-3">
+            Logistics techniques and systems
+        </div>
+        <div class="container justify-content-between">
+          <h4 class="text-center">Let's talk about management tools in logistics</h4>
+          <h5 class="text-center">I don't like math... so let's quickly go through these concepts 🧮</h5>
+          <br>
+
+          <h4 class="text-center mt-4">Economic Order Quantity Model</h4>
+          <div class="border border-success p-2 md-2 rounded-4">
+            The economic order quantity (EOQ) is a company's optimal order quantity that meets demand while minimizing its total costs related to ordering, receiving, and holding inventory. The EOQ formula is best applied in situations where demand, ordering, and holding costs remain constant over time.
+          </div>
+          <br>
+
+          <div class="card">
+            <h5 class="card-header text-center">Formula</h5>
+            <div class="card-body">
+              <p class="card-text text-center"><strong>EOQ = square root of [(2 * X * Y) / Z]</strong>
+              </p>
+              <p class="card-text text-center">
+                X = annual product demand
+                <br>Y = cost of placing an order
+                <br>Z = cost of maintaining a unit of inventory for one year (also known as holding cost)
+              </p>
+            </div>
+          </div>
+          <br>
+          <div class="card">
+            <h5 class="card-header text-center">Example</h5>
+            <div class="card-body">
+              <p class="card-text text-center">Okay, let's assume a company sells 1000 units of a product per year, with a cost of $5 per order and an inventory holding cost of $1 per unit per year. The EOQ formula for this company would be:
+                <br>EOQ = square root of (2 x 1000 x 5) / 1 = 100.
+              </p>
+            </div>
+          </div>
+          <br>
+          <div class="card">
+            <h5 class="card-header text-center">All in all</h5>
+            <div class="card-body">
+              <p class="card-text">This means that the company should order 100 units of this product in each order to minimize total inventory costs. If the company were to order more or fewer units in each order, total inventory costs could increase due to ordering and holding costs.
+              </p>
+            </div>
+          </div>
+          <br>
+
+          <h4 class="text-center mt-4">ABC inventory classification</h4>
+          <div class="border border-success p-2 md-2 rounded-4">
+            ABC inventory classification is an inventory management technique that is used to classify inventory items into three categories based on their relative value in terms of costs or importance. The three categories are known as A, B, and C and are ranked in decreasing order of importance or value.<br>
+
+            <br>ABC classification is based on the principle that 80% of effects come from 20% of causes, which is known as the Pareto principle. Therefore, ABC classification is used to identify the inventory items that account for 80% of the costs or value of the inventory.
+          </div>
+          <br>
+          <div class="card">
+            <h5 class="card-header text-center">Example</h5>
+            <div class="card-body">
+              <p class="card-text">Let's say a company has an inventory consisting of 1000 different items. The company collects data on the annual costs and sales of each item and uses it to classify them into the A, B, and C categories.
+              </p>
+            </div>
+          </div>
+          <br>
+          <div class="card">
+            <h5 class="card-header text-center">How to organize the items quantities?</h5>
+            <div class="card-body">
+              <p class="card-text text-center">
+                Category A: the top 200 items in terms of cost or value, which account for 80% of the costs or value of the inventory.
+                <br>Category B: the next 300 items in importance, which account for 15% of the costs or value of the inventory.
+                <br>Category C: the bottom 500 items, which account for the remaining 5% of the costs or value of the inventory.
+              </p>
+            </div>
+          </div>
+          <br>
+          <div class="card">
+            <h5 class="card-header text-center">Lastly</h5>
+            <div class="card-body">
+              <p class="card-text">After classifying the inventory items into these categories, the company can use different inventory management strategies for each category. For example, category A items may require more rigorous and frequent inventory management, while category C items can be managed more loosely due to their lower importance. This way, the company can optimize its inventory management and reduce the overall inventory costs.
+              </p>
+            </div>
+          </div>
+          <br>
+
+          <h4 class="text-center mt-4">Just-in-Time</h4>
+          <div class="border border-success p-2 md-2 rounded-4">
+            The Just-in-Time (JIT) method is an inventory management technique in which materials are received, produced, or delivered just when they are needed in the production or service process, without unnecessary accumulations.<br>
+
+            <br>The goal of the JIT method is to minimize inventory and maximize efficiency in the production or service process, leading to a reduction in inventory costs and an increase in productivity.
+          </div>
+          <br>
+
+          <div class="card">
+            <h5 class="card-header text-center">Example</h5>
+            <div class="card-body">
+              <p class="card-text">Let's imagine an automobile manufacturing company that applies the JIT method in its production process. Instead of holding large quantities of parts and components in inventory, the company only orders the necessary materials just before they are needed in the production process.<br>
+
+                <br>The company's suppliers also follow the JIT method and deliver materials just when they are needed. This means that the company does not have to worry about storing large quantities of materials and parts in its warehouse and can maintain an efficient and streamlined supply chain.
+              </p>
+            </div>
+          </div>
+          <br>
+          <div class="card">
+            <h5 class="card-header text-center">In conclusion</h5>
+            <div class="card-body">
+              <p class="card-text">However, for the JIT method to work properly, the company needs to have a high level of reliability in its suppliers and good planning and coordination in its production process to avoid disruptions in the supply chain.
+              </p>
+            </div>
+          </div>
+          <br>
+    
+</body>
+</html>

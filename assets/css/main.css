@@ -26,15 +26,14 @@ body{
     display: none;
 }
 
-.limit{
-    border-style: dashed;
-    color: white;
-}
-
 .nav-link{
     color: crimson;
 }
 
-.nav-item{
-    font-size: 12px;
+.border {
+    border-width: 2px !important;
+}
+
+.card {
+    background-color: rgb(85, 5, 120);
 }
