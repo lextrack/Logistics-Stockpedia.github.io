@@ -4,5 +4,5 @@ At the moment, I'm in the process of developing a straightforward CRUD applicati
 
 You can use it <a href="https://lextrack.github.io/BasicCRUDInfoJS.github.io/" target="_blank">here</a>
 
-[![2023-03-13-11h21-03.jpg](https://i.postimg.cc/906NDjrR/2023-03-13-11h21-03.jpg)](https://postimg.cc/V0FFhp9m)
-[![2023-03-13-11h21-08.jpg](https://i.postimg.cc/BZjSPcj4/2023-03-13-11h21-08.jpg)](https://postimg.cc/CdVTW8CQ)
+<img src="./Docs/1.png">
+<img src="./Docs/2.png">
