@@ -4,8 +4,21 @@ body{
 
 *{
     color: #fff;
-    font-size: 13px;
+    font-size: 14px;
 }
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%; 
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+  }
+  
+  footer p {
+    margin: 0;
+  }
 
 #Update{
     display: none;
@@ -36,4 +49,5 @@ body{
 
 .card {
     background-color: rgb(85, 5, 120);
+    color: #fff;
 }
