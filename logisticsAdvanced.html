@@ -13,26 +13,23 @@
     <link rel="icon" href="assets/imgs/icono.ico" />
 </head>
 <body>
-  <ul class="nav nav-tabs justify-content-center bg-dark">
-    <li class="nav-item">
-        <a class="nav-link" href="index.html">Home</a>
-      </li>
-    <li class="nav-item">
-      <a class="nav-link" href="crud.html">CRUD</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="logisticsBasics.html">Logistics Basics</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="logisticsAdvanced.html">Advanced concepts</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="toolsLogistics.html">Logistics techniques and systems</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="glossary.html">Glossary</a>
-    </li>
-  </ul>
+  <nav class="navbar navbar-expand-lg border-bottom border-body" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Logistics Stockpedia</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="crud.html">CRUD</a>
+          <a class="nav-link" href="logisticsBasics.html">Logistics basics</a>
+          <a class="nav-link active" aria-current="page" href="logisticsAdvanced.html">Advanced concepts</a>
+          <a class="nav-link" href="toolsLogistics.html">Logistics techniques and systems</a>
+          <a class="nav-link" href="glossary.html">Glossary</a>
+        </div>
+      </div>
+    </div>
+  </nav>
 
   <div class="container">
     <div class="h2 pb-2 mb-4 text-info text-center border-bottom border-info mt-3 md-3">
@@ -40,55 +37,108 @@
     </div>
     <div class="container justify-content-between">
       <h4 class="text-center">If we go deeper in logistics field...</h4>
-      <h5 class="text-center">More concepts about logistics are coming up 📝</h5>
+      <h5 class="text-center">More concepts about logistics are coming up 🗒️</h5>
       <br>
-      <div class="row g-2">
-        <div class="col-6">
-          <div class="border border-danger p-2 md-2 rounded-4">
-          <div class="p-2"><strong>Reverse logistics</strong> refers to the process of managing the flow of products, materials, or information from the point of consumption back to the point of origin. This can include activities such as product returns, repairs, or recycling. Reverse logistics is important for minimizing waste and reducing the environmental impact of logistics operations.</div>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                Reverse logistics
+            </button>
+          </h2>
+          <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                Refers to the process of managing the flow of products, materials, or information from the point of consumption back to the point of origin. This can include activities such as product returns, repairs, or recycling. Reverse logistics is important for minimizing waste and reducing the environmental impact of logistics operations.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                Inventory management
+            </button>
+          </h2>
+          <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                Involves the tracking and management of goods as they move through the supply chain. This can include managing inventory levels, tracking product availability, and forecasting demand. Effective inventory management is essential for ensuring that goods are available when and where they are needed.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+              Risk management
+            </button>
+          </h2>
+          <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+               Is the process of identifying, assessing, and mitigating risks in logistics operations. This can include risks related to transportation, inventory management, supplier relationships, and other factors that can impact the supply chain. Effective risk management can help to minimize disruptions and ensure continuity of operations.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+              Global logistics
+            </button>
+          </h2>
+          <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+               Involves managing the movement of goods and services across international borders. This can include navigating customs regulations, coordinating transportation across multiple countries, and managing cultural and language differences.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+              Freight transportation
+            </button>
+          </h2>
+          <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+               Involves the movement of goods from one location to another. This can include transportation by truck, rail, ship, or plane. Effective freight transportation is essential for ensuring that goods are delivered on time and in good condition.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+              Last-Mile Delivery
+            </button>
+          </h2>
+          <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+               Is a critical aspect of the logistics process that involves the transportation of goods from a distribution center or transportation hub to their final destination, typically a residential or commercial address. It is called "last-mile" because it is the final leg of the supply chain that delivers the goods to the end customer. Last-mile delivery can be a challenging and complex process, as it involves navigating dense urban areas, coordinating with multiple stakeholders, and managing customer expectations.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+              Packaging and labeling
+            </button>
+          </h2>
+          <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Are important aspects of the logistics process. Packaging helps to protect goods during transportation and storage, while labeling provides important information about the contents of the package. Effective packaging and labeling systems are critical for ensuring that goods are delivered in good condition and that they are easily identified and tracked throughout the supply chain.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+              Capacity planning
+            </button>
+          </h2>
+          <div id="collapse8" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+               Is the process of determining the production capacity needed to meet customer demand. This involves analyzing demand forecasts, assessing production capabilities, and making decisions about staffing, equipment, and facility needs.
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-6">
-        <div class="border border-info p-2 md-2 rounded-4">
-        <div class="p-2"><strong>Inventory management</strong> involves the tracking and management of goods as they move through the supply chain. This can include managing inventory levels, tracking product availability, and forecasting demand. Effective inventory management is essential for ensuring that goods are available when and where they are needed.</div>
-      </div>
-      </div>
-        <div class="col-6">
-          <div class="border border-danger p-2 md-2 rounded-4">
-          <div class="p-2"><strong>Risk management</strong> is the process of identifying, assessing, and mitigating risks in logistics operations. This can include risks related to transportation, inventory management, supplier relationships, and other factors that can impact the supply chain. Effective risk management can help to minimize disruptions and ensure continuity of operations.</div>
-        </div>
-      </div>
-      <div class="col-6">
-        <div class="border border-info p-2 md-2 rounded-4">
-        <div class="p-2"><strong>Global logistics</strong> involves managing the movement of goods and services across international borders. This can include navigating customs regulations, coordinating transportation across multiple countries, and managing cultural and language differences.</div>
-      </div>
-    </div>
-    <div class="col-6">
-      <div class="border border-danger p-2 md-2 rounded-4">
-      <div class="p-2"><strong>Last-Mile Delivery</strong> is a critical aspect of the logistics process that involves the transportation of goods from a distribution center or transportation hub to their final destination, typically a residential or commercial address. It is called "last-mile" because it is the final leg of the supply chain that delivers the goods to the end customer.
-
-      Last-mile delivery can be a challenging and complex process, as it involves navigating dense urban areas, coordinating with multiple stakeholders, and managing customer expectations.</div>
-    </div>
-    </div>
-        <div class="col-6">
-      <div class="border border-info p-2 md-2 rounded-4">
-      <div class="p-2"><strong>Packaging and labeling</strong> are important aspects of the logistics process. Packaging helps to protect goods during transportation and storage, while labeling provides important information about the contents of the package. Effective packaging and labeling systems are critical for ensuring that goods are delivered in good condition and that they are easily identified and tracked throughout the supply chain.</div>
-    </div>
-    </div>
-    <div class="col-6">
-      <div class="border border-danger p-2 md-2 rounded-4">
-      <div class="p-2"><strong>Freight transportation</strong> involves the movement of goods from one location to another. This can include transportation by truck, rail, ship, or plane. Effective freight transportation is essential for ensuring that goods are delivered on time and in good condition.</div>
-    </div>
-    </div>
-    <div class="col-6">
-      <div class="border border-info p-2 md-2 rounded-4">
-      <div class="p-2"><strong>Capacity planning</strong> is the process of determining the production capacity needed to meet customer demand. This involves analyzing demand forecasts, assessing production capabilities, and making decisions about staffing, equipment, and facility needs.</div>
-    </div>
-    </div>
-    </div>
+      <br>
   </div>
-  </div>
-  <br>
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
   integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" 

@@ -13,33 +13,30 @@
     <link rel="icon" href="assets/imgs/icono.ico" />
 </head>
 <body>
-  <ul class="nav nav-tabs justify-content-center bg-dark">
-    <li class="nav-item">
-        <a class="nav-link" href="index.html">Home</a>
-      </li>
-    <li class="nav-item">
-      <a class="nav-link" href="crud.html">CRUD</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="logisticsBasics.html">Logistics Basics</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" aria-current="page" href="logisticsAdvanced.html">Advanced concepts</a>
-   </li>
-    <li class="nav-item">
-        <a class="nav-link" href="toolsLogistics.html">Logistics techniques and systems</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="glossary.html">Glossary</a>
-    </li>
-  </ul>
+  <nav class="navbar navbar-expand-lg border-bottom border-body" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Logistics Stockpedia</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="crud.html">CRUD</a>
+          <a class="nav-link" href="logisticsBasics.html">Logistics basics</a>
+          <a class="nav-link" aria-current="page" href="logisticsAdvanced.html">Advanced concepts</a>
+          <a class="nav-link" href="toolsLogistics.html">Logistics techniques and systems</a>
+          <a class="nav-link active" href="glossary.html">Glossary</a>
+        </div>
+      </div>
+    </div>
+  </nav>
 
       <div class="container">
         <div class="h2 pb-2 mb-4 text-info text-center border-bottom border-info mt-3 md-3">
             Glossary
           </div>
           <h4 class="text-center">Basic terms used in Logistics field 🏢</h4>
-          <table class="table table-dark table-hover mt-4">
+          <table class="table table-striped table-dark">
             <thead>
               <tr>
                 <th scope="col">ID</th>
@@ -127,6 +124,49 @@
                 <td>Last-mile delivery refers to the final stage of the delivery process, in which products are delivered to the end customer. This can be a particularly challenging aspect of logistics, as it requires navigating complex delivery routes, coordinating with multiple stakeholders, and managing customer expectations.</td>
                 <td><img src="assets/imgs/lastmile.png" class="img-fluid" style="width: 300px; height: 120px;"></td>
               </tr>
+              <tr>
+                <th scope="row">14</th>
+                <td><strong>Distribution Center</strong></td>
+                <td>A facility used for receiving, storing, and distributing products to retailers, wholesalers, or directly to customers.</td>
+                <td><img src="assets/imgs/dc.jpg" class="img-fluid" style="width: 300px; height: 120px;"></td>
+              </tr>
+              <tr>
+                <th scope="row">15</th>
+                <td><strong>Customs Broker</strong></td>
+                <td>A professional who assists in the clearance of goods through customs, ensuring compliance with import/export regulations.</td>
+                <td><img src="assets/imgs/Experienced-Customs-Broker.jpg" class="img-fluid" style="width: 300px; height: 120px;"></td>
+              </tr>
+              <tr>
+                <th scope="row">16</th>
+                <td><strong>RFID (Radio-Frequency Identification)</strong></td>
+                <td>A technology that uses radio waves to identify and track objects, often used in inventory management.</td>
+                <td><img src="assets/imgs/reader_tags.jpg" class="img-fluid" style="width: 300px; height: 120px;"></td>
+              </tr>
+                <tr>
+                <th scope="row">17</th>
+                <td><strong>Bill of Lading</strong></td>
+                <td>A legal document that details the shipment of goods and serves as evidence of the contract of carriage.</td>
+                <td><img src="assets/imgs/billof.png" class="img-fluid" style="width: 300px; height: 120px;"></td>
+              </tr>
+            </tr>
+            <tr>
+            <th scope="row">18</th>
+            <td><strong>3PL (Third-Party Logistics)</strong></td>
+            <td>Companies that provide outsourced logistics and supply chain services, including transportation, warehousing, and distribution.</td>
+            <td><img src="assets/imgs/pl.png" class="img-fluid" style="width: 300px; height: 120px;"></td>
+          </tr>
+          <tr>
+            <th scope="row">19</th>
+            <td><strong>Cross-docking</strong></td>
+            <td>A logistics practice where products are transferred directly from inbound to outbound transportation without being stored in a warehouse.</td>
+            <td><img src="assets/imgs/RSF_BLOG_CROSS_DOCKING_GRAPHIC.jpg" class="img-fluid" style="width: 300px; height: 120px;"></td>
+          </tr>
+          <tr>
+            <th scope="row">20</th>
+            <td><strong>Incoterms (International Commercial Terms)</strong></td>
+            <td>Standardized international trade terms that define the responsibilities of buyers and sellers in a contract.</td>
+            <td><img src="assets/imgs/incoterms-2020-risk-transfer.png" class="img-fluid" style="width: 300px; height: 120px;"></td>
+          </tr>
             </tbody>
           </table>
       </div>
