@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Basic CRUD with JavaScript and information about logistics field">
+    <meta name="author" content="Lextrack">
+    <title>Logistics techniques - Logistics Stockpedia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <link rel="icon" href="assets/imgs/icono.ico" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg border-bottom border-body" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Logistics Stockpedia</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="logisticsBasics.html">Logistics basics</a>
+          <a class="nav-link" aria-current="page" href="logisticsAdvanced.html">Advanced concepts</a>
+          <a class="nav-link active" href="methodsmodelsLogistics.html">Methods and Models in Logistics</a>
+          <a class="nav-link" href="glossary.html">Glossary</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="h2 pb-2 mb-4 text-info text-center border-bottom border-info mt-3 md-3">
+      Methods and Models in Logistics
+    </div>
+    <div class="container justify-content-between">
+      <h4 class="text-center">Let's talk about management tools in logistics</h4>
+      <h5 class="text-center">I don't like math, but let's briefly go through these concepts (Only some of them are about mathematics) 🧮</h5>
+      <br>
+
+      <h4 class="text-center mt-4">Economic Order Quantity Model</h4>
+      <div class="border border-success p-2 md-2 rounded-4">
+        The economic order quantity (EOQ) represents the optimal order quantity that allows a company to meet its demand while minimizing total costs associated with ordering, receiving, and holding inventory. This model is most effective in scenarios where demand, ordering costs, and holding costs remain stable over time.
+      </div>
+      <br>
+      
+      <div class="card">
+        <h5 class="card-header text-center">Formula</h5>
+        <div class="card-body">
+          <p class="card-text text-center"><strong>EOQ = square root of [(2 * X * Y) / Z]</strong></p>
+          <p class="card-text text-center">
+            Where:
+            <br>X = Annual product demand
+            <br>Y = Cost of placing an order
+            <br>Z = Cost of holding one unit of inventory for one year
+          </p>
+        </div>
+      </div>
+      <br>
+      
+      <div class="card">
+        <h5 class="card-header text-center">Example</h5>
+        <div class="card-body">
+          <p class="card-text text-center">
+            Let's consider a company that sells 1000 units of a product annually, with a $5 cost per order and a $1 holding cost per unit per year. Applying the EOQ formula:
+            <br>EOQ = square root of (2 * 1000 * 5) / 1 = 100.
+          </p>
+          <p class="card-text text-center">
+            Here's the breakdown:
+            <br>First, calculate the numerator: 2 x 1.000 x 5.
+            <br>Then, divide by the denominator: 10.0000 / 1.
+            <br>Finally, take the square root: 10.0000 = 100.
+          </p>
+        </div>
+      </div>
+      <br>
+      
+      <div class="card">
+        <h5 class="card-header text-center">Conclusion</h5>
+        <div class="card-body">
+          <p class="card-text">
+            The square root operation is applied at the end of the calculation to determine the exact EOQ value, which in this case is 100 units. This quantity represents the optimal order size that minimizes total inventory costs for the company.
+          </p>
+        </div>
+      </div>
+      <br>     
+
+      <h4 class="text-center mt-4">ABC Inventory Classification</h4>
+      <div class="border border-success p-2 md-2 rounded-4">
+        ABC inventory classification is a strategic inventory management technique that categorizes inventory items into three segments—A, B, and C—based on their relative importance or value in terms of costs.
+        <br><br>
+        This classification system is rooted in the Pareto principle, which asserts that roughly 80% of effects come from 20% of causes. In the context of inventory management, ABC classification identifies the items that contribute to 80% of the inventory costs or value, enabling businesses to prioritize their management efforts effectively.
+      </div>
+      <br>
+
+      <div class="card">
+        <h5 class="card-header text-center">Example</h5>
+        <div class="card-body">
+          <p class="card-text">
+            For instance, consider a company with an inventory of 1000 different items. By analyzing annual cost and sales data for each item, the company categorizes them into A, B, and C groups based on their financial impact.
+          </p>
+        </div>
+      </div>
+      <br>
+
+      <div class="card">
+        <h5 class="card-header text-center">Organizing Inventory Quantities</h5>
+        <div class="card-body">
+          <p class="card-text text-center">
+            Category A: Includes the top 200 items with the highest costs or value, representing 80% of the total inventory costs or value.
+            <br>Category B: Encompasses the next 300 items in terms of importance, covering 15% of the total inventory costs or value.
+            <br>Category C: Comprises the remaining 500 items, which contribute to the remaining 5% of the total inventory costs or value.
+          </p>
+        </div>
+      </div>
+      <br>
+
+      <div class="card">
+        <h5 class="card-header text-center">Implementation Strategy</h5>
+        <div class="card-body">
+          <p class="card-text">
+            Once classified, each category warrants distinct inventory management strategies. Category A items typically require stringent control and frequent monitoring due to their significant impact on costs. In contrast, Category C items, with lower financial impact, can be managed more leniently.
+            <br>This strategic approach allows companies to optimize their inventory management practices, reducing overall costs while maintaining adequate stock levels for critical items.
+          </p>
+        </div>
+      </div>
+      <br>
+
+      <h4 class="text-center mt-4">Just-in-Time (JIT) Method</h4>
+      <div class="border border-success p-2 md-2 rounded-4">
+        The Just-in-Time (JIT) method is an inventory management technique where materials are received, produced, or delivered precisely when they are needed in the production or service process, without unnecessary accumulations.
+        <br><br>
+        The primary goal of JIT is to minimize inventory levels and maximize efficiency in production or service operations. By doing so, companies can reduce inventory costs and enhance overall productivity.
+      </div>
+      <br>
+      
+      <div class="card">
+        <h5 class="card-header text-center">Example</h5>
+        <div class="card-body">
+          <p class="card-text">
+            For example, consider an automobile manufacturing company that implements JIT in its production process. Instead of stocking large quantities of parts and components, the company orders materials just before they are needed on the assembly line.
+            <br>
+            Suppliers also adhere to JIT principles, delivering materials precisely when required. This approach allows the company to maintain an efficient and streamlined supply chain without the need for excessive warehousing.
+          </p>
+        </div>
+      </div>
+      <br>
+      
+      <div class="card">
+        <h5 class="card-header text-center">Considerations</h5>
+        <div class="card-body">
+          <p class="card-text">
+            However, successful implementation of JIT relies heavily on dependable suppliers and meticulous production planning to avoid disruptions in the supply chain.
+          </p>
+        </div>
+      </div>
+      <br>
+      
+      <h4 class="text-center mt-4">Total Quality Management (TQM) Method</h4>
+      <div class="border border-success p-2 md-2 rounded-4">
+        Total Quality Management (TQM) is a management philosophy focused on continuously improving the quality of products and services offered by an organization. It involves a systematic approach where all members of an organization contribute to enhancing processes, products, services, and the culture in which they work. TQM emphasizes customer satisfaction, leadership commitment, employee involvement, process improvement, collaboration with suppliers and customers, and the use of data-driven decision-making to achieve sustained success and competitiveness.
+      </div>
+      <br>
+      
+      <div class="card">
+        <h5 class="card-header text-center">Example</h5>
+        <div class="card-body">
+          <p class="card-text">
+            Imagine a logistics company implementing TQM principles to improve its distribution operations. The company starts by involving all employees in identifying areas for improvement. They conduct regular meetings to discuss customer feedback and quality issues related to shipping accuracy and delivery timeliness.
+            <br><br>
+            Management provides training on quality tools like Six Sigma and encourages employees to use these tools to analyze and improve processes. They establish clear quality standards for packaging, handling, and transportation of goods.
+            <br><br>
+            The company also collaborates closely with suppliers to ensure the quality of incoming materials meets specifications, reducing defects and delays in production.
+            <br><br>
+            Through these efforts, the logistics company achieves a significant reduction in shipping errors and improves on-time delivery rates. Customer satisfaction increases, leading to repeat business and referrals.
+            <br><br>
+            In this example, Total Quality Management (TQM) principles such as continuous improvement, customer focus, employee involvement, and collaboration with suppliers are applied to enhance overall operational efficiency and deliver superior service to customers.
+          </p>
+        </div>
+      </div>
+      <br>   
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+      crossorigin="anonymous"></script>
+      
+</body>
+</html>
