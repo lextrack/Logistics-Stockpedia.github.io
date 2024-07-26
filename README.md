@@ -6,4 +6,7 @@ It's an informative application developed with HTML, CSS, and JavaScript, incorp
 
 <img src="./Docs/1.png">
 <img src="./Docs/2.png">
-<img src="./Docs/3.png">
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
